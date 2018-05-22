@@ -1,13 +1,4 @@
 #
-# Import module if needed, should be part of module testing
-#
-
-$ModuleName = 'SE.IntroModule'
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$root = (get-item $here).Parent.FullName
-if (!(Get-Module $ModuleName)) {Import-Module (Join-Path $root "$ModuleName.psd1") -Force}
-
-#
 # Fake test
 #
 
@@ -24,7 +15,7 @@ Describe "Fake-Test" {
 $CommandName = 'Get-Square'
 $ParameterNames = @('Number')
 
-Describe "Function-GetSquare-Definition" {
+Describe "Function $CommandName Definition" {
 
     $CmdDef = Get-Command -Name $CommandName -Module $ModuleName -ea 0
     $CmdFake = Get-Command -Name 'FakeCommandName' -Module $ModuleName -ea 0
@@ -47,7 +38,7 @@ Describe "Function-GetSquare-Definition" {
 # Check functionality, real tests
 #
 
-Describe 'Proper Get-Square Functionality' {
+Describe "Proper $CommandName Functionality" {
     It 'Checks Proper Functionality' {
         Get-Square 2 | Should -Be 4
     }

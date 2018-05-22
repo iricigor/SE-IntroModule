@@ -5,34 +5,24 @@
 #
 
 #
-# Import module
-#
-
-$ModuleName = 'SE.IntroModule'
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$root = (get-item $here).Parent.FullName
-if (!(Get-Module $ModuleName)) {Import-Module (Join-Path $root "$ModuleName.psd1") -Force}
-
-#
-# Display troubleshooting variables
-#
-
-if ($Env:APPVEYOR) {
-    Write-Host "Checking environment details`n"
-    $PSVersionTable | Out-Host
-    Get-Module | Out-Host
-    Get-Module -ListAvailable PowerShellGet,PackageManagement | Out-Host
-    Get-PackageProvider | Out-Host
-    Get-PackageProvider -ListAvailable  | Out-Host    
-}
-
-#
 # Fake test
 #
+
 
 Describe 'Fake Test' {
     It "Runs Fake Test" {
         $true | Should Be $true
+    }
+}
+
+#
+# Module Should be loaded
+#
+
+$ModuleName = 'SE.IntroModule'
+Describe "Test if module is loaded" {
+    It "Module should be loaded" {
+        Get-Module $ModuleName -ea 0 | Should -Not -Be $null
     }
 }
 
