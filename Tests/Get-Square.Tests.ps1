@@ -5,7 +5,7 @@
 $ModuleName = 'SE.IntroModule'
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $root = (get-item $here).Parent.FullName
-if (!(Get-Module $ModuleName)) {Import-Module (Join-Path $root "$ModuleName.psm1") -Force}  # TODO: Update to .psd1
+if (!(Get-Module $ModuleName)) {Import-Module (Join-Path $root "$ModuleName.psd1") -Force}
 
 #
 # Fake test
