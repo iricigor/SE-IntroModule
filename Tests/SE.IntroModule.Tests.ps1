@@ -43,7 +43,7 @@ Describe 'Fake Test' {
 
 Describe 'Proper Declarations' {
     It 'Checks for existence of functions' {
-        (Get-Command -Module IntroModule).Count | Should -Be 2
+        (Get-Command -Module $ModuleName).Count | Should -Be 2
         Get-Command Get-Cube -ea 0 | Should -Not -Be $Null
         Get-Command Get-Square -ea 0 | Should -Not -Be $Null
         Get-Command Get-Fourth -ea 0 | Should -Be $Null
@@ -57,7 +57,7 @@ Describe 'Proper Declarations' {
     }
 
     It 'Checks for Aliases' {
-        Get-Command -Module IntroModule | % {
+        Get-Command -Module $ModuleName | % {
             Get-Alias -Definition ($_.Name) | Should -Not -Be $null
         }
     }
