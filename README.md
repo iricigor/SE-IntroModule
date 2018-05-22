@@ -1,8 +1,8 @@
 # SE.IntroModule
 
 [![Build status](https://ci.appveyor.com/api/projects/status/tlxsb0j6v9jdhq0s?svg=true)](https://ci.appveyor.com/project/iricigor/se-intromodule)
-[![latest version](https://img.shields.io/powershellgallery/v/SE-IntroModule.svg?label=latest+version)](https://www.powershellgallery.com/packages/SE-IntroModule)
-[![downloads](https://img.shields.io/powershellgallery/dt/SE-IntroModule.svg?label=downloads)](https://www.powershellgallery.com/packages/SE-IntroModule)
+[![latest version](https://img.shields.io/powershellgallery/v/SE.IntroModule.svg?label=latest+version)](https://www.powershellgallery.com/packages/SE-IntroModule)
+[![downloads](https://img.shields.io/powershellgallery/dt/SE.IntroModule.svg?label=downloads)](https://www.powershellgallery.com/packages/SE-IntroModule)
 
 ## Introduction
 
