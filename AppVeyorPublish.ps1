@@ -26,7 +26,7 @@ if ($LocalVersion -eq $RemoteVersion) {
 # we proceed with publish
 Write-Output "Publishing version $LocalVersion to PSGallery, currently published version is $RemoteVersion"
 try {
-    Publish-Module -Path . -Repository PSGallery -NuGetApiKey $env:MyPSGalleryAPIKey -ea Stop
+    Publish-Module -Path . -Repository PSGallery -NuGetApiKey $env:MyPSGalleryAPIKey -ea Stop -Verbose
     Write-Output "Module successfully published!"
 } catch {
     Write-Output "Publishing failed: $_"
