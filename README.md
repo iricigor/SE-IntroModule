@@ -28,8 +28,12 @@ Import-Module .\EasyAzureFunction\SE.IntroModule.psd1 -Force  # Import module
 
 ## How to use
 
-Type `Get-Command -Module SE.IntroModule` for list of commands, or
-`Get-Command -Module SE.IntroModule | Get-Help | Select Name, Synopsis` for explanation on all commands
+Here are two commands for quick start with this module:
+
+```PowerShell
+Get-Command -Module SE.IntroModule # for list of all commands
+Get-Command -Module SE.IntroModule | Get-Help | Select Name, Synopsis # for explanation on all commands
+```
 
 ## Examples
 
