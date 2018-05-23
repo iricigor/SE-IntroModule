@@ -15,8 +15,12 @@ $ModuleName = 'SE-IntroModule'
 $Manifest = Test-ModuleManifest -Path (Join-Path . "$ModuleName.psd1")
 $LocalVersion = $Manifest.Version.ToString()
 
-$RemoteModule = Find-Module $ModuleName -Repository PSGallery
-$RemoteVersion = $RemoteModule.Version.ToString()
+try {
+    $RemoteModule = Find-Module $ModuleName -Repository PSGallery
+    $RemoteVersion = $RemoteModule.Version.ToString()    
+} catch {
+    $RemoteVersion = 'not found'
+}
 
 if ($LocalVersion -eq $RemoteVersion) {
     Write-Warning "Module $ModuleName with version $LocalVersion already exists. Consider bumping version."
