@@ -9,6 +9,14 @@ environment:
     APPVEYOR_BUILD_FOLDER: c:\projects\SE.IntroModule
   - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
 
+for:
+-
+  matrix:
+    only:
+      - image: Visual Studio 2017
+
+  clone_folder: c:\projects\SE.IntroModule
+
 install:
   - ps: Install-Module Pester -Force -SkipPublisherCheck -Scope CurrentUser
 
