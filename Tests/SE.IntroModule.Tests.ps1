@@ -19,7 +19,7 @@ Describe 'Fake Test' {
 # Module Should be loaded
 #
 
-$ModuleName = 'SE-IntroModule'
+$ModuleName = 'SE.IntroModule'
 Describe "Test if module is loaded" {
     It "Module should be loaded" {
         Get-Module $ModuleName -ea 0 | Should -Not -Be $null

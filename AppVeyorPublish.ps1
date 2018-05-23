@@ -10,7 +10,7 @@ if ($env:OS -notmatch 'Windows') {
 }
 
 # check if this version already exists
-$ModuleName = 'SE-IntroModule'
+$ModuleName = 'SE.IntroModule'
 
 $Manifest = Test-ModuleManifest -Path (Join-Path . "$ModuleName.psd1")
 $LocalVersion = $Manifest.Version.ToString()
