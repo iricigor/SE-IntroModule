@@ -6,7 +6,6 @@ environment:
     secure: kIYsNnhXS69KNHOKGmz+GQn5pfwnTer90p7YUk3sKmkvFEwIpvxDjDAFFBu30EJ4
   matrix:
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-    APPVEYOR_BUILD_FOLDER: c:\projects\SE.IntroModule
   - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
 
 for:
