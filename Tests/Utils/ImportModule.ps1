@@ -2,7 +2,7 @@
 # Import module
 #
 
-$ModuleName = 'SE.IntroModule'
+$ModuleName = 'SE-IntroModule'
 
 $Here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $TestsRoot = (get-item $here).Parent.FullName

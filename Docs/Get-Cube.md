@@ -1,6 +1,6 @@
 ---
-external help file: SE.IntroModule-help.xml
-Module Name: SE.IntroModule
+external help file: SE-IntroModule-help.xml
+Module Name: SE-IntroModule
 online version:
 schema: 2.0.0
 ---
