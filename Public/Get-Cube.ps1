@@ -1,14 +1,4 @@
 function Get-Cube {
-    <#
-    .SYNOPSIS
-        SE-UP example commandlet
-    .EXAMPLE
-        cube 2,3,4
-        Returns cubes of specified numbers
-    .EXAMPLE
-        2,3,4 | cube
-        Returns cubes of numbers passed via pipeline
-    #>
     
     param (
         [Parameter(Mandatory=$true,ValueFromPipeline=$true)]

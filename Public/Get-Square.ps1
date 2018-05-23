@@ -1,15 +1,5 @@
 function Get-Square {
-    <#
-    .SYNOPSIS
-        SE-UP example commandlet
-    .EXAMPLE
-        square 2,3,4
-        Returns square of specified numbers
-    .EXAMPLE
-        2,3,4 | square
-        Returns squares of numbers passed via pipeline
-    #>
-    
+   
     param (
         [Parameter(Mandatory=$true,ValueFromPipeline=$true)]
         [int[]]$Number
