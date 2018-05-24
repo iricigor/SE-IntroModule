@@ -12,7 +12,7 @@
 RootModule = '.\SE.IntroModule.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1.1'
+ModuleVersion = '0.2.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -107,7 +107,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'Automatically re-published initial version'
+        ReleaseNotes = 'Supports decimal numbers'
 
     } # End of PSData hashtable
 
