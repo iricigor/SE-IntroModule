@@ -20,9 +20,9 @@
           <maml:Description>
             <maml:para>Input number(s)</maml:para>
           </maml:Description>
-          <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">Decimal[]</command:parameterValue>
           <dev:type>
-            <maml:name>Int32[]</maml:name>
+            <maml:name>Decimal[]</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -35,9 +35,9 @@
         <maml:Description>
           <maml:para>Input number(s)</maml:para>
         </maml:Description>
-        <command:parameterValue required="true" variableLength="false">Int32[]</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">Decimal[]</command:parameterValue>
         <dev:type>
-          <maml:name>Int32[]</maml:name>
+          <maml:name>Decimal[]</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
